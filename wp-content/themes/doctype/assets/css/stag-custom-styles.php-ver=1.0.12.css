@@ -1,0 +1,112 @@
+/**
+ * This file contains styles related to the user settings of the theme
+ */
+
+h1, h2, h3, h4, h5, h6, .stag-intro-text { font-family: 'Montserrat'; }/* Theme Dependant CSS - Depending on chosen accent color */
+.page-header--portfolio span, .related-projects span { background-color: #ffffff; }
+body { background-color: #ffffff; font-family: 'Cardo', 'Helvetica Neue', Helvetica, sans-serif; }
+.blog .hentry::before, .archive .hentry::before, .search .hentry::before { background-color: #ffffff; }a, .paging-navigation .current, .section-intro span, .archive-lists .widgettitle:before, .archive-lists .screen-reader-text:before, .paging-navigation a:hover, .widget_categories, .widget_archive, .archive-lists a:hover { color: #969696; }
+.paging-navigation .current, .paging-navigation a:hover{ border-color: #969696; }
+.button, button, input[type=submit], .navbar a:hover, .sub-menu, .sfHover a { background-color: #969696; }
+
+
+/* Custom CSS */
+.section-intro h1,h1.blog-title {
+line-height: 1.5;
+font-weight:600;
+color:#000000;
+}
+
+.page-header {
+margin-bottom: 50px;
+}
+
+#stag_widget_intro-2 {
+padding-bottom: 0
+}
+
+h2.blog-title {
+font-family: Montserrat, Sans Serif;
+font-size:30px;
+font-weight: 600;
+color:#000000;
+}
+
+
+.testies {
+max-width:800px;
+}
+
+p.truewords {
+font-size: 23px;
+line-height: 1.5;
+color:#000000;
+}
+
+p.blog-subtitle {
+font-size: 23px;
+color:#000000;
+}
+
+div.entry-content {
+margin-top: 0;
+}
+
+.site-footer {
+background-color: #ffffff;
+color: #000000;
+}
+
+p.blog-subtitle {
+font-weight: 500;
+font-style: italic;
+}
+
+
+.section-recent-projects {
+margin-top: 20px;
+}
+
+.page-header {
+margin-bottom: 0;
+}
+
+article {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+#stag_widget_static_content-4 {
+padding-top:0;
+padding-bottom:100px;
+}
+
+#stag_widget_static_content-5 {
+padding-bottom:0;
+}
+
+#stag_widget_recent_projects-2 {
+margin-top:0;
+margin-bottom:0;
+}
+
+#portfolio-146,#portfolio-157,#portfolio-144,#portfolio-226,#portfolio-218;#portfolio-148 {
+margin-top:0;
+}
+
+.main-content {
+color:#000000;
+font-size: 24px;
+line-height: 1.5;
+}
+
+#masthead {
+padding: 0;
+max-height: 50px;
+}
+
+.stag-dropcap {
+margin: 3px 0px 2px 0px;
+padding: 0px;
+}
+
