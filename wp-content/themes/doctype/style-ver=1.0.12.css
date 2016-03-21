@@ -1124,7 +1124,11 @@ color: #4D4D4D;
       display: block;
       margin-bottom: 20px; }
       .entry-content-wrapper .project-meta li:first-child {
-        margin-bottom: 45px; }
+        /*margin-bottom: 45px;*/
+      }
+      .entry-content-wrapper .project-meta li:first-child a {
+        background-color: #555;
+      }
     .entry-content-wrapper .project-meta .button {
       width: 100%;
       max-width: 270px; }
