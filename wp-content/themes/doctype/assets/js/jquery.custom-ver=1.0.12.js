@@ -40,54 +40,54 @@
 			});
 		}
 
-		if( stag.menuState === "on" ) {
-			$("#masthead").headroom({
-			  "tolerance": 5,
-			  "offset": 200,
-			  "classes": {
-			    "initial": "site-header",
-			    "pinned": "site-header--pinned",
-			    "unpinned": "site-header--unpinned"
-			  }
-			});
-
-			var AnimatedHeader = (function(){
-				var docElem = document.documentElement,
-					header = $('.site-header'),
-					didScroll = false,
-					changeHeaderOn = 200;
-
-				function init(){
-					window.addEventListener( 'scroll', function() {
-						if(!didScroll){
-							didScroll = true;
-							setTimeout(scrollPage, 250);
-						}
-					}, false);
-
-				}
-
-				function scrollPage(){
-					var sy = scrollY();
-					if ( sy >= changeHeaderOn && $(window).width() >= 992 ){
-						header.addClass('header-shrink');
-					}else{
-						header.removeClass('header-shrink');
-					}
-					didScroll = false;
-				}
-
-				function scrollY() {
-					return window.pageYOffset || docElem.scrollTop;
-				}
-
-
-				if ( $(window).width() >= 992 ){
-					init();
-				}
-
-			})();
-		}
+		// if( stag.menuState === "on" ) {
+		// 	$("#masthead").headroom({
+		// 	  "tolerance": 5,
+		// 	  "offset": 200,
+		// 	  "classes": {
+		// 	    "initial": "site-header",
+		// 	    "pinned": "site-header--pinned",
+		// 	    "unpinned": "site-header--unpinned"
+		// 	  }
+		// 	});
+		//
+		// 	var AnimatedHeader = (function(){
+		// 		var docElem = document.documentElement,
+		// 			header = $('.site-header'),
+		// 			didScroll = false,
+		// 			changeHeaderOn = 200;
+		//
+		// 		function init(){
+		// 			window.addEventListener( 'scroll', function() {
+		// 				if(!didScroll){
+		// 					didScroll = true;
+		// 					setTimeout(scrollPage, 250);
+		// 				}
+		// 			}, false);
+		//
+		// 		}
+		//
+		// 		function scrollPage(){
+		// 			var sy = scrollY();
+		// 			if ( sy >= changeHeaderOn && $(window).width() >= 992 ){
+		// 				header.addClass('header-shrink');
+		// 			}else{
+		// 				header.removeClass('header-shrink');
+		// 			}
+		// 			didScroll = false;
+		// 		}
+		//
+		// 		function scrollY() {
+		// 			return window.pageYOffset || docElem.scrollTop;
+		// 		}
+		//
+		//
+		// 		if ( $(window).width() >= 992 ){
+		// 			init();
+		// 		}
+		//
+		// 	})();
+		// }
 
 		if(typeof jQuery().mixitup === "function"){
 			$('#portfolio-filter').mixitup({
