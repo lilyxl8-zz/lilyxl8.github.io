@@ -1256,11 +1256,13 @@ color: #4D4D4D;
   .section-recent-projects .page-header {
     margin-top: 0; }
   .section-recent-projects .portfolio-button {
-    margin: 60px auto 0 auto;
+    margin: 20px auto 0 auto;
     display: block;
     text-align: center;
-    width: 365px;
+    width: 20em;
     max-width: 100%; }
+  .section-recent-projects .truewords {
+    margin-top: 40px; }
 
 .section-static-content {
   padding-top: 65px;
