@@ -1,0 +1,602 @@
+/* PHASE 0: Reset */
+
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  /*
+  Get rid of native styling. Read more here:
+  http://css-tricks.com/almanac/properties/a/appearance/
+  */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Clearfix */
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* PHASE 1: Header */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: #eee;
+}
+
+.header {
+  background: #f00;
+  color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.header a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.header-nav {
+  margin: 0 auto;
+  width: 900px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.header-logo {
+  float: left;
+  border-right: 1px solid #ccc;
+  font-weight: 700;
+}
+
+.header-logo:hover {
+  background: #000;
+}
+
+.header-list {
+  float: right;
+}
+
+.header-list > li {
+  float: left;
+  border-left: 1px solid #ccc;
+}
+
+.header-list > li:hover {
+  background: #000;
+}
+
+/* PHASE 2: Notifications */
+
+.badge {
+  display: inline;
+  font-size: 14px;
+  padding: 1px 6px;
+  background: #000;
+  border-radius: 50%;
+}
+
+li:hover .badge {
+  background: #f00;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+}
+
+.header-list > li {
+  position: relative;
+}
+
+.header-notifications {
+  display: none;
+  position: absolute;
+  left: -1px;
+  font-size: 14px;
+  white-space: nowrap;
+  background: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+}
+
+li:hover .header-notifications {
+  display: block;
+}
+
+.header-notifications > li {
+  border-top: 1px solid #ccc;
+  color: #000;
+}
+
+.header-notifications > li:hover {
+  background: #eee;
+}
+
+/* PHASE 3: Layout */
+
+.content {
+  position: relative;
+  margin: 0 auto;
+  background: #fff;
+  width: 900px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.content:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 240px;
+  width: 1px;
+  background: #ccc;
+}
+
+.content-sidebar {
+  float: left;
+  width: 200px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.content-main {
+  float: left;
+  width: 620px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+/* PHASE 4: Footer */
+
+.footer {
+  width: 900px;
+  margin: 0 auto 50px auto;
+  background: #fff;
+  color: #aaa;
+  font-size: 14px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.footer-copy {
+  display: block;
+  padding: 20px;
+  float: left;
+}
+
+.footer-links {
+  padding: 20px;
+  float: right;
+}
+
+.footer-links > li {
+  float: left;
+  padding: 0 0 0 20px;
+}
+
+.footer a:hover {
+  color: #000;
+}
+
+/* PHASE 5: Cats */
+
+.content-header {
+  position: relative;
+  height: 200px;
+  background: url("cats.jpg");
+  background-size: cover;
+  border-bottom: 1px solid #ccc;
+}
+
+.content-header > h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 240px;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: #000 0 0 10px;
+}
+
+.content-header-add-friend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #000;
+  background: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.content-header-add-friend:hover {
+  background: #eee;
+}
+
+/* PHASE 6: Sidebar */
+
+.profile-picture {
+  display: block;
+  margin-top: -120px;
+  border: 1px solid #000;
+  background: #000;
+  border-radius: 5px;
+  position: relative;
+}
+
+.profile-info {
+  margin: 20px 0;
+}
+
+.profile-info > h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.profile-info > p {
+  margin: 20px 0;
+}
+
+.profile-nav {
+  margin: 20px 0;
+}
+
+.profile-nav > li {
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-nav > li:first-child {
+  border-top: 1px solid #ccc;
+}
+
+.profile-nav a {
+  display: block;
+  padding: 5px;
+  font-weight: 700;
+}
+
+.profile-nav a:hover {
+  background: #eee;
+}
+
+/* PHASE 7: Online */
+
+.profile-picture {
+  overflow: hidden;
+}
+
+.online {
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-weight: 700;
+  color: #fff;
+  background: #0c0;
+  padding: 5px 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  transform: rotate(-45deg) translateX(-25%);
+  box-shadow: 0 1px 0 0 #070;
+}
+
+/* PHASE 8: Thumbs */
+
+.profile-friends > li {
+  float: left;
+  width: 60px;
+  margin: 0 0 10px 0;
+}
+
+.profile-friends > li:nth-child(3n-1) {
+  margin: 0 10px 10px 10px;
+}
+
+.thumb {
+  display: block;
+  position: relative;
+  width: 58px;
+  height: 58px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.thumb:after {
+  content: attr(title);
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 65px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.thumb:before {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -7px;
+  border-top: 5px solid #000;
+  border-bottom: 0;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+.thumb:hover:before,
+.thumb:hover:after {
+  display: block;
+}
+
+.thumb > img {
+  border-radius: 5px;
+}
+
+/* PHASE 9: Forms */
+
+.form {
+  margin: 0 0 20px 0;
+}
+
+.form-thumb {
+  float: left;
+}
+
+.form-fieldset {
+  float: left;
+  margin: 0 0 0 20px;
+  padding: 19px;
+  width: 500px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input {
+  margin: 0 0 20px 0;
+}
+
+.input > label {
+  display: block;
+  font-weight: 700;
+  padding: 0 0 5px 0;
+}
+
+.input > input,
+.input > textarea {
+  display: block;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: calc(100% - 22px);
+  border-radius: 5px;
+}
+
+.input > input:focus,
+.input > textarea:focus {
+  border-color: #0c0;
+}
+
+.input > textarea {
+  height: 120px;
+}
+
+.submit {
+  margin: 20px 0 0 0;
+  padding: 0 0 3px 0;
+}
+
+.submit > button {
+  position: relative;
+  padding: 10px 20px;
+  color: #fff;
+  background: #0c0;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 0 #070;
+}
+
+.submit > button:hover {
+  background: #0b0;
+}
+
+.submit > button:active {
+  top: 3px;
+  background: #0a0;
+  box-shadow: none;
+}
+
+.button-alternative {
+  padding: 0 0 0 5px;
+}
+
+.button-alternative strong {
+  padding: 0 0 0 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-alternative strong:hover {
+  color: #f00;
+}
+
+/* PHASE 10: Posts */
+
+.posts {
+  margin: 20px 0 0 0;
+}
+
+.post {
+  border-top: 1px solid #ccc;
+  margin: 20px 0 0 0;
+  padding: 20px 0 0 0;
+}
+
+.post-thumb {
+  float: left;
+}
+
+.post-body {
+  float: left;
+  margin: 0 0 0 20px;
+  width: 540px;
+}
+
+.post-body > h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.post-body > p {
+  margin: 0 0 20px 0;
+}
+
+.post-footer {
+  margin: 20px 0 0 0;
+}
+
+.post-footer-info {
+  float: left;
+  color: #999;
+  font-size: 14px;
+}
+
+.post-footer-info > li {
+  float: left;
+}
+
+.post-footer-info > li:after {
+  content: "·";
+  padding: 0 5px;
+}
+
+.post-footer-info > li:last-child:after {
+  content: none;
+}
+
+.post-footer-tools {
+  float: right;
+}
+
+.post-footer-tools > li {
+  float: left;
+  margin: 0 0 0 10px;
+}
+
+/* PHASE 11: Icons */
+
+[class*="icon-"] {
+  display: inline-block;
+  background-image: url("sprite.png");
+  background-size: 25px 250px;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  overflow: hidden;
+  height: 0;
+  width: 25px;
+  padding-top: 25px;
+}
+
+[class*="icon-small-"] {
+  width: 20px;
+  padding-top: 20px;
+}
+
+.icon-comment {
+  background-position: 0 0;
+}
+
+.icon-comment:hover {
+  background-position: 0 -25px;
+}
+
+.icon-reblog {
+  background-position: 0 -100px;
+}
+
+.icon-reblog:hover {
+  background-position: 0 -125px;
+}
+
+.icon-favorite {
+  background-position: 0 -50px;
+}
+
+.icon-favorite:hover {
+  background-position: 0 -75px;
+}
+
+.icon-small-wall {
+  background-position: 0 -225px;
+}
+
+.icon-small-about {
+  background-position: 0 -175px;
+}
+
+.icon-small-friends {
+  background-position: 0 -150px;
+}
+
+.icon-small-photos {
+  background-position: 0 -200px;
+}
