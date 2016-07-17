@@ -44,6 +44,15 @@ line-height: 1.5;
 color:#000000;
 }
 
+td {
+  vertical-align: top;
+}
+
+td > div {
+  width: 70%;
+  margin: 0 auto;
+}
+
 p.blog-subtitle {
 font-size: 23px;
 color:#000000;
