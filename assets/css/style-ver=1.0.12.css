@@ -293,6 +293,11 @@ body {
       padding-left: 20px;
       padding-right: 20px; } }
 
+.fa-2 {
+    font-size: 2em;
+    padding: 0 8px;
+}
+
 .inside, .site-content, .site-footer .site-info {
   max-width: 1170px;
   margin: 0 auto; }
@@ -797,13 +802,11 @@ img.alignnone {
     font-size: 28px;
     font-size: 1.86667rem;
     font-weight: 300; }
-  .entry-content h2,
-  .comment-content h2 {
+  h2 {
     font-size: 23px;
     font-size: 1.53333rem;
     font-weight: bold; }
-  .entry-content h3,
-  .comment-content h3 {
+  h3 {
     font-size: 20px;
     font-size: 1.33333rem;
     font-weight: bold;
